@@ -8,4 +8,5 @@ import spacy #natural language processing
 import nltk #natural language processing
 from IPython.core.display import HTML #build html pages
 from matplotlib import pyplot as plt #generate graphs
-import scispacy # library to handle with specific content 
+import scispacy # library to handle with specific content
+import en_core_sci_md
