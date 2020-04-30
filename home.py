@@ -10,3 +10,16 @@ from IPython.core.display import HTML #build html pages
 from matplotlib import pyplot as plt #generate graphs
 import scispacy # library to handle with specific content
 import en_core_sci_md
+from os import listdir
+from os import walk
+# from google.colab import drive
+
+# create dictionary
+corona_features = {'paper_id': [], 'title': [], 'abstract': [], 'text': []}
+
+# converting dictionary to Dataframe 
+corona_dataframe = pd.DataFrame.from_dict(corona_features)
+
+json_filenames = glob.glob(f'{"./"}//**/*.json', recursive=True);
+
+print(json_filenames)
